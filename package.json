@@ -21,6 +21,7 @@
     "body-parser": "^2.3.0",
     "express": "^5.2.1",
     "multer": "^2.2.0",
+    "mysql": "^2.18.1",
     "nodemailer": "^9.0.1",
     "save": "^2.9.0"
   }
