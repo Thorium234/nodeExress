@@ -2,12 +2,12 @@ var mysql = require('mysql');
 var con = mysql.createConnection({
    host: "localhost",
    user: "root",
-   password: "mypassword"
+//   password: " "
 });
 con.connect(function (err) {
    if (err) throw err;
    console.log("Connected!");
-   con.query("CREATE DATABASE IF NOT EXISTS mydb;", function (err, result) {
+   con.query("CREATE DATABASE IF NOT EXISTS nodedb;", function (err, result) {
       if (err) throw err;
          console.log("Created database successfully");
    });
