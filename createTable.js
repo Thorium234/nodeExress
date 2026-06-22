@@ -18,12 +18,17 @@ con.connect(function (err) {
       if (err) throw err;
       console.log("Created table successfully");
    });
-   con.query("SHOW TABLES;", function (err, result) {
+/*   con.query("SHOW TABLES;", function (err, result) {
       if (err) throw err;
       console.log("Showing tables\n");
       for (var i = 0; i < result.length; i++) {
          console.log(JSON.stringify(result[i]));
       }
-   })
+   })*/
+con.query("DESC employee;", function (err, result) {
+   if (err) throw err;
+   console.log(JSON.stringify(result));
+});
+
    con.end();
 });
